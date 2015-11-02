@@ -1,0 +1,11 @@
+obj\Release\Product.wixobj
+obj\Release\seafood.wixobj
+C:\Tokni\Installer\SeafoodSimInstaller\SeafoodSimInstaller\bin\Release\cab1.cab
+C:\Tokni\Installer\SeafoodSimInstaller\SeafoodSimInstaller\bin\Release\cab4.cab
+C:\Tokni\Installer\SeafoodSimInstaller\SeafoodSimInstaller\bin\Release\cab3.cab
+C:\Tokni\Installer\SeafoodSimInstaller\SeafoodSimInstaller\bin\Release\cab2.cab
+C:\Tokni\Installer\SeafoodSimInstaller\SeafoodSimInstaller\bin\Release\SeafoodSimInstaller.msi
+C:\Tokni\Installer\SeafoodSimInstaller\SeafoodSimInstaller\bin\Release\SeafoodSimInstaller.wixpdb
+obj\Release\SeafoodSimInstaller.wixproj.BindContentsFileListnull.txt
+obj\Release\SeafoodSimInstaller.wixproj.BindOutputsFileListnull.txt
+obj\Release\SeafoodSimInstaller.wixproj.BindBuiltOutputsFileListnull.txt

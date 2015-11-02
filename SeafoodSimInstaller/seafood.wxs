@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="INSTALLFOLDER">
+            <Component Id="Connect_to_Server.Bat" Guid="{23DD82AA-45F4-4FAC-BE06-17EE31BD50FE}">
+                <File Id="Connect_to_Server.Bat" KeyPath="yes" Source="c:\temp\windowsnoeditor\Connect to Server.Bat" />
+            </Component>
+            <Component Id="Manifest_DebugFiles.txt" Guid="{9EE48BAC-C48E-46AC-91D4-3F8CB4188271}">
+                <File Id="Manifest_DebugFiles.txt" KeyPath="yes" Source="c:\temp\windowsnoeditor\Manifest_DebugFiles.txt" />
+            </Component>
+            <Component Id="Manifest_NonUFSFiles.txt" Guid="{D66C0AE9-71D2-412D-BDE5-5EFFA5A4E283}">
+                <File Id="Manifest_NonUFSFiles.txt" KeyPath="yes" Source="c:\temp\windowsnoeditor\Manifest_NonUFSFiles.txt" />
+            </Component>
+            <Component Id="SeaFoodSim48.exe" Guid="{0D153BA0-2754-4EC1-A5BD-698E6C4E79DC}">
+                <File Id="SeaFoodSim48.exe" KeyPath="yes" Source="c:\temp\windowsnoeditor\SeaFoodSim48.exe" />
+            </Component>
+            <Directory Id="Engine" Name="Engine">
+                <Directory Id="Binaries" Name="Binaries">
+                    <Directory Id="ThirdParty" Name="ThirdParty">
+                        <Directory Id="Leap" Name="Leap">
+                            <Directory Id="Win64" Name="Win64">
+                                <Component Id="Leap.dll" Guid="{816C2B50-027C-485F-9119-4B641BF9D795}">
+                                    <File Id="Leap.dll" KeyPath="yes" Source="c:\temp\windowsnoeditor\Engine\Binaries\ThirdParty\Leap\Win64\Leap.dll" />
+                                </Component>
+                            </Directory>
+                        </Directory>
+                        <Directory Id="Ogg" Name="Ogg">
+                            <Directory Id="Win64_1" Name="Win64">
+                                <Directory Id="VS2013" Name="VS2013">
+                                    <Component Id="libogg_64.dll" Guid="{D23303D4-E719-4266-BDB4-90FB6CCF709A}">
+                                        <File Id="libogg_64.dll" KeyPath="yes" Source="c:\temp\windowsnoeditor\Engine\Binaries\ThirdParty\Ogg\Win64\VS2013\libogg_64.dll" />
+                                    </Component>
+                                </Directory>
+                            </Directory>
+                        </Directory>
+                        <Directory Id="OpenVR" Name="OpenVR">
+                            <Directory Id="OpenVRv000" Name="OpenVRv000">
+                                <Directory Id="Win64_2" Name="Win64">
+                                    <Component Id="openvr_api.dll" Guid="{BEEF8A2A-FB2F-48A7-9145-D6F1D1A4A1B5}">
+                                        <File Id="openvr_api.dll" KeyPath="yes" Source="c:\temp\windowsnoeditor\Engine\Binaries\ThirdParty\OpenVR\OpenVRv000\Win64\openvr_api.dll" />
+                                    </Component>
+                                </Directory>
+                            </Directory>
+                        </Directory>
+                        <Directory Id="PhysX" Name="PhysX">
+                            <Directory Id="APEX_1.3" Name="APEX-1.3">
+                                <Directory Id="Win64_3" Name="Win64">
+                                    <Directory Id="VS2013_1" Name="VS2013">
+                                        <Component Id="ApexFrameworkPROFILE_x64.dll" Guid="{8533C5CC-7C70-4DF6-AA06-12C83C23476B}">
+                                            <File Id="ApexFrameworkPROFILE_x64.dll" KeyPath="yes" Source="c:\temp\windowsnoeditor\Engine\Binaries\ThirdParty\PhysX\APEX-1.3\Win64\VS2013\ApexFrameworkPROFILE_x64.dll" />
+                                        </Component>
+                                        <Component Id="APEX_ClothingPROFILE_x64.dll" Guid="{4070E487-C4CD-42D6-B04C-3C5EA1412C3A}">
+                                            <File Id="APEX_ClothingPROFILE_x64.dll" KeyPath="yes" Source="c:\temp\windowsnoeditor\Engine\Binaries\ThirdParty\PhysX\APEX-1.3\Win64\VS2013\APEX_ClothingPROFILE_x64.dll" />
+                                        </Component>
+                                        <Component Id="APEX_DestructiblePROFILE_x64.dll" Guid="{2C2E0E6F-EAD9-4A91-A3DC-584CE45861E2}">
+                                            <File Id="APEX_DestructiblePROFILE_x64.dll" KeyPath="yes" Source="c:\temp\windowsnoeditor\Engine\Binaries\ThirdParty\PhysX\APEX-1.3\Win64\VS2013\APEX_DestructiblePROFILE_x64.dll" />
+                                        </Component>
+                                        <Component Id="APEX_LegacyPROFILE_x64.dll" Guid="{859E82E3-6317-4A66-AE89-EC11872B7352}">
+                                            <File Id="APEX_LegacyPROFILE_x64.dll" KeyPath="yes" Source="c:\temp\windowsnoeditor\Engine\Binaries\ThirdParty\PhysX\APEX-1.3\Win64\VS2013\APEX_LegacyPROFILE_x64.dll" />
+                                        </Component>
+                                        <Component Id="APEX_LoaderPROFILE_x64.dll" Guid="{038A0CB2-2B14-46D0-9429-44D91DD1878D}">
+                                            <File Id="APEX_LoaderPROFILE_x64.dll" KeyPath="yes" Source="c:\temp\windowsnoeditor\Engine\Binaries\ThirdParty\PhysX\APEX-1.3\Win64\VS2013\APEX_LoaderPROFILE_x64.dll" />
+                                        </Component>
+                                        <Component Id="APEX_ParticlesPROFILE_x64.dll" Guid="{5C0D17E1-6D45-43AB-A1D3-1027F95DB58D}">
+                                            <File Id="APEX_ParticlesPROFILE_x64.dll" KeyPath="yes" Source="c:\temp\windowsnoeditor\Engine\Binaries\ThirdParty\PhysX\APEX-1.3\Win64\VS2013\APEX_ParticlesPROFILE_x64.dll" />
+                                        </Component>
+                                    </Directory>
+                                </Directory>
+                            </Directory>
+                            <Directory Id="PhysX_3.3" Name="PhysX-3.3">
+                                <Directory Id="Win64_4" Name="Win64">
+                                    <Directory Id="VS2013_2" Name="VS2013">
+                                        <Component Id="nvToolsExt64_1.dll" Guid="{27610582-CA7D-4C57-AA52-F6D6EABD16B6}">
+                                            <File Id="nvToolsExt64_1.dll" KeyPath="yes" Source="c:\temp\windowsnoeditor\Engine\Binaries\ThirdParty\PhysX\PhysX-3.3\Win64\VS2013\nvToolsExt64_1.dll" />
+                                        </Component>
+                                        <Component Id="PhysX3CommonPROFILE_x64.dll" Guid="{C5EB7EF6-F8D8-4C14-AE7E-48DC383AE180}">
+                                            <File Id="PhysX3CommonPROFILE_x64.dll" KeyPath="yes" Source="c:\temp\windowsnoeditor\Engine\Binaries\ThirdParty\PhysX\PhysX-3.3\Win64\VS2013\PhysX3CommonPROFILE_x64.dll" />
+                                        </Component>
+                                        <Component Id="PhysX3CookingPROFILE_x64.dll" Guid="{140A6757-946D-45E3-B7B6-675F8B464B43}">
+                                            <File Id="PhysX3CookingPROFILE_x64.dll" KeyPath="yes" Source="c:\temp\windowsnoeditor\Engine\Binaries\ThirdParty\PhysX\PhysX-3.3\Win64\VS2013\PhysX3CookingPROFILE_x64.dll" />
+                                        </Component>
+                                        <Component Id="PhysX3GpuPROFILE_x64.dll" Guid="{90E1FE42-AD13-4D6C-9B21-C66A3A89A30B}">
+                                            <File Id="PhysX3GpuPROFILE_x64.dll" KeyPath="yes" Source="c:\temp\windowsnoeditor\Engine\Binaries\ThirdParty\PhysX\PhysX-3.3\Win64\VS2013\PhysX3GpuPROFILE_x64.dll" />
+                                        </Component>
+                                        <Component Id="PhysX3PROFILE_x64.dll" Guid="{A31EC0B9-C24E-4477-82EC-F67658ED0D23}">
+                                            <File Id="PhysX3PROFILE_x64.dll" KeyPath="yes" Source="c:\temp\windowsnoeditor\Engine\Binaries\ThirdParty\PhysX\PhysX-3.3\Win64\VS2013\PhysX3PROFILE_x64.dll" />
+                                        </Component>
+                                        <Component Id="PhysXDevice64.dll" Guid="{2B9385BA-03FA-4C6B-845C-9ECC0ABF3E01}">
+                                            <File Id="PhysXDevice64.dll" KeyPath="yes" Source="c:\temp\windowsnoeditor\Engine\Binaries\ThirdParty\PhysX\PhysX-3.3\Win64\VS2013\PhysXDevice64.dll" />
+                                        </Component>
+                                    </Directory>
+                                </Directory>
+                            </Directory>
+                        </Directory>
+                        <Directory Id="Steamworks" Name="Steamworks">
+                            <Directory Id="Steamv132" Name="Steamv132">
+                                <Directory Id="Win64_5" Name="Win64">
+                                    <Component Id="steam_api64.dll" Guid="{70EC1493-682B-44A7-A43E-8515E3EF8A39}">
+                                        <File Id="steam_api64.dll" KeyPath="yes" Source="c:\temp\windowsnoeditor\Engine\Binaries\ThirdParty\Steamworks\Steamv132\Win64\steam_api64.dll" />
+                                    </Component>
+                                </Directory>
+                            </Directory>
+                        </Directory>
+                        <Directory Id="Vorbis" Name="Vorbis">
+                            <Directory Id="Win64_6" Name="Win64">
+                                <Directory Id="VS2013_3" Name="VS2013">
+                                    <Component Id="libvorbisfile_64.dll" Guid="{B7566884-C812-44ED-A937-9209E2D87AC3}">
+                                        <File Id="libvorbisfile_64.dll" KeyPath="yes" Source="c:\temp\windowsnoeditor\Engine\Binaries\ThirdParty\Vorbis\Win64\VS2013\libvorbisfile_64.dll" />
+                                    </Component>
+                                    <Component Id="libvorbis_64.dll" Guid="{DD6BD137-CBEA-4472-9B1F-844BDF61CFDB}">
+                                        <File Id="libvorbis_64.dll" KeyPath="yes" Source="c:\temp\windowsnoeditor\Engine\Binaries\ThirdParty\Vorbis\Win64\VS2013\libvorbis_64.dll" />
+                                    </Component>
+                                </Directory>
+                            </Directory>
+                        </Directory>
+                    </Directory>
+                </Directory>
+            </Directory>
+            <Directory Id="Pre_Requisites" Name="Pre Requisites">
+                <Component Id="UE4PrereqSetup_x64.exe" Guid="{AC0568E2-E5E3-4C00-92BA-60082B1924D5}">
+                    <File Id="UE4PrereqSetup_x64.exe" KeyPath="yes" Source="c:\temp\windowsnoeditor\Pre Requisites\UE4PrereqSetup_x64.exe" />
+                </Component>
+            </Directory>
+            <Directory Id="SeaFoodSim48" Name="SeaFoodSim48">
+                <Directory Id="Binaries_1" Name="Binaries">
+                    <Directory Id="Win64_7" Name="Win64">
+                        <Component Id="SeaFoodSim48_Win64_Test.exe" Guid="{CA711D9C-E317-41E8-AE03-7AE81D6100B0}">
+                            <File Id="SeaFoodSim48_Win64_Test.exe" KeyPath="yes" Source="c:\temp\windowsnoeditor\SeaFoodSim48\Binaries\Win64\SeaFoodSim48-Win64-Test.exe" />
+                        </Component>
+                        <Component Id="SeaFoodSim48_Win64_Test.pdb" Guid="{0C55224B-7A64-40E6-84A1-DAD6DF3B06EC}">
+                            <File Id="SeaFoodSim48_Win64_Test.pdb" KeyPath="yes" Source="c:\temp\windowsnoeditor\SeaFoodSim48\Binaries\Win64\SeaFoodSim48-Win64-Test.pdb" />
+                        </Component>
+                    </Directory>
+                </Directory>
+                <Directory Id="Content" Name="Content">
+                    <Directory Id="Paks" Name="Paks">
+                        <Component Id="SeaFoodSim48_WindowsNoEditor.pak" Guid="{ED098D78-741B-488D-B470-0919DE979746}">
+                            <File Id="SeaFoodSim48_WindowsNoEditor.pak" KeyPath="yes" Source="c:\temp\windowsnoeditor\SeaFoodSim48\Content\Paks\SeaFoodSim48-WindowsNoEditor.pak" />
+                        </Component>
+                    </Directory>
+                </Directory>
+            </Directory>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="SeafoodSimComponents">
+            <ComponentRef Id="Connect_to_Server.Bat" />
+            <ComponentRef Id="Manifest_DebugFiles.txt" />
+            <ComponentRef Id="Manifest_NonUFSFiles.txt" />
+            <ComponentRef Id="SeaFoodSim48.exe" />
+            <ComponentRef Id="Leap.dll" />
+            <ComponentRef Id="libogg_64.dll" />
+            <ComponentRef Id="openvr_api.dll" />
+            <ComponentRef Id="ApexFrameworkPROFILE_x64.dll" />
+            <ComponentRef Id="APEX_ClothingPROFILE_x64.dll" />
+            <ComponentRef Id="APEX_DestructiblePROFILE_x64.dll" />
+            <ComponentRef Id="APEX_LegacyPROFILE_x64.dll" />
+            <ComponentRef Id="APEX_LoaderPROFILE_x64.dll" />
+            <ComponentRef Id="APEX_ParticlesPROFILE_x64.dll" />
+            <ComponentRef Id="nvToolsExt64_1.dll" />
+            <ComponentRef Id="PhysX3CommonPROFILE_x64.dll" />
+            <ComponentRef Id="PhysX3CookingPROFILE_x64.dll" />
+            <ComponentRef Id="PhysX3GpuPROFILE_x64.dll" />
+            <ComponentRef Id="PhysX3PROFILE_x64.dll" />
+            <ComponentRef Id="PhysXDevice64.dll" />
+            <ComponentRef Id="steam_api64.dll" />
+            <ComponentRef Id="libvorbisfile_64.dll" />
+            <ComponentRef Id="libvorbis_64.dll" />
+            <ComponentRef Id="UE4PrereqSetup_x64.exe" />
+            <ComponentRef Id="SeaFoodSim48_Win64_Test.exe" />
+            <ComponentRef Id="SeaFoodSim48_Win64_Test.pdb" />
+            <ComponentRef Id="SeaFoodSim48_WindowsNoEditor.pak" />
+        </ComponentGroup>
+    </Fragment>
+</Wix>

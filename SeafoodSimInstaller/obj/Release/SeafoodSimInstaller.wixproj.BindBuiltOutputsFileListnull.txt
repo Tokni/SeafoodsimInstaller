@@ -1,6 +1,0 @@
-C:\Tokni\Installer\SeafoodSimInstaller\SeafoodSimInstaller\bin\Release\cab2.cab
-C:\Tokni\Installer\SeafoodSimInstaller\SeafoodSimInstaller\bin\Release\cab4.cab
-C:\Tokni\Installer\SeafoodSimInstaller\SeafoodSimInstaller\bin\Release\cab1.cab
-C:\Tokni\Installer\SeafoodSimInstaller\SeafoodSimInstaller\bin\Release\cab3.cab
-C:\Tokni\Installer\SeafoodSimInstaller\SeafoodSimInstaller\bin\Release\SeafoodSimInstaller.msi
-C:\Tokni\Installer\SeafoodSimInstaller\SeafoodSimInstaller\bin\Release\SeafoodSimInstaller.wixpdb

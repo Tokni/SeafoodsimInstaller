@@ -5,24 +5,24 @@
         Comments='toLRN:SeafoodSim is an unregistered trademark of Tokni.' Manufacturer='Tokni OmniCorp' InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
     <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
     <WixVariable Id="WixUILicenseRtf" Value="Licence.rtf"/>
-    <UI>
-      <UIRef Id="WixUI_InstallDir"/>
-      <!--<Publish Dialog="ExitDialog"
-               Control="Finish"
-               Event="DoAction"
-               Value="InstallPreReq"
-               >NOT Installed</Publish>-->
-    </UI>
-		<MajorUpgrade DowngradeErrorMessage="A newer version of SeafoodSim is already installed." />
-    <Media Id="1" Cabinet="Cab1.cab" EmbedCab="yes" />
-    
-   
-      <Feature Id="SeaFoodSimClient" Title="toLRN: SeafoodSim Client" Level="1">
+    <Feature Id="SeaFoodSimClient" Title="toLRN: SeafoodSim Client" Level="1">
         
         <ComponentGroupRef Id="SeafoodSimComponents" />
         
       </Feature>
-    <!--<CustomAction Id="InstallPreReq" Return="check" Directory="TARGETDIR" ExeCommand="PrereqSetup\UE4PrereqSetup_x64.exe" />-->
+    <CustomAction Id="InstallPreReq" FileKey="UE4PrereqSetup_x64.exe" ExeCommand="" Return="asyncNoWait" />
+    <UI>
+      <UIRef Id="WixUI_InstallDir"/>
+      
+    </UI>
+    <InstallExecuteSequence>
+        <Custom Action="InstallPreReq" After="InstallFinalize">NOT Installed</Custom>
+      </InstallExecuteSequence>
+		<MajorUpgrade DowngradeErrorMessage="A newer version of SeafoodSim is already installed." />
+    <Media Id="1" Cabinet="Cab1.cab" EmbedCab="yes" />
+    
+   
+      
 	</Product>
 
 	<Fragment>

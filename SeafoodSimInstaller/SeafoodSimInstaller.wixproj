@@ -25,6 +25,7 @@
     <Compile Include="seafood.wxs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Licence.rtf" />
     <Content Include="Setup.bat" />
   </ItemGroup>
   <Import Project="$(WixTargetsPath)" />

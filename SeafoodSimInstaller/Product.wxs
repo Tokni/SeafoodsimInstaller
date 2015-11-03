@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-	<Product Id="*" Name="toLRN: SeafoodSim" Language="1033" Version="1.0.0.0" Manufacturer="Tokni International Megacorporation :)" UpgradeCode="b814b245-650c-4261-ac6a-c06afbb00cc1">
-		<Package Id='*' Keywords='Installer' Description="Tokni toLRN:SeafoodSim installer"
-        Comments='toLRN:SeafoodSim is an unregistered trademark of Tokni.' Manufacturer='Tokni OmniCorp' InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+	<Product Id="54B24C6E-7E10-4063-8070-79500B4DE824" Name="SeafoodSim" Language="1033" Version="1.0.0.0" Manufacturer="Tokni sp/f" UpgradeCode="FA040DA4-F6B8-43EB-BF4C-CCBBA64C125E">
+		<Package Id='*' Keywords='Installer' Description="SeafoodSim installer"
+        Comments='SeafoodSim is an unregistered trademark of Tokni.' Manufacturer='Tokni sp/f' InstallerVersion="200" Compressed="yes" InstallScope="perMachine" Platform="x64" />
     <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
     <WixVariable Id="WixUILicenseRtf" Value="Licence.rtf"/>
-    <Feature Id="SeaFoodSimClient" Title="toLRN: SeafoodSim Client" Level="1">
+    <Feature Id="SeaFoodSimClient" Title="SeafoodSim Client" Level="1">
         
         <ComponentGroupRef Id="SeafoodSimComponents" />
         
@@ -27,7 +27,7 @@
 
 	<Fragment>
 		<Directory Id="TARGETDIR" Name="SourceDir">
-			<Directory Id="ProgramFilesFolder">
+			<Directory Id="ProgramFiles64Folder">
 				<Directory Id="INSTALLFOLDER" Name="SeafoodSim" />
 			</Directory>
 		</Directory>

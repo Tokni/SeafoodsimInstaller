@@ -27,8 +27,19 @@
 
 	<Fragment>
 		<Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="DesktopFolder" SourceName="Desktop" />
 			<Directory Id="ProgramFiles64Folder">
-				<Directory Id="INSTALLFOLDER" Name="SeafoodSim" />
+        <Directory Id="INSTALLFOLDER" Name="SeafoodSim">
+          <Component Id="Connect_to_Server.Bat" Guid="{B9C9ABE4-580D-420F-AAE0-ED4233356A47}">
+            <File Id="Connect_to_Server.Bat" KeyPath="yes" Source="c:\temp\windowsnoeditor\Connect to Server.Bat">
+              <Shortcut
+                Id="DesktopShortcut"
+                Directory="DesktopFolder"
+                Name="Launch Seafoodsim.lnk"
+                WorkingDirectory="INSTALLFOLDER" />
+            </File>
+          </Component>
+        </Directory>
 			</Directory>
 		</Directory>
 	</Fragment>

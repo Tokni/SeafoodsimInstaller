@@ -2,9 +2,6 @@
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
     <Fragment>
         <DirectoryRef Id="INSTALLFOLDER">
-            <Component Id="Connect_to_Server.Bat" Guid="{B9C9ABE4-580D-420F-AAE0-ED4233356A47}">
-                <File Id="Connect_to_Server.Bat" KeyPath="yes" Source="c:\temp\windowsnoeditor\Connect to Server.Bat" />
-            </Component>
             <Component Id="Manifest_DebugFiles.txt" Guid="{E8691FD1-6BD6-4A96-82A7-448F30413123}">
                 <File Id="Manifest_DebugFiles.txt" KeyPath="yes" Source="c:\temp\windowsnoeditor\Manifest_DebugFiles.txt" />
             </Component>

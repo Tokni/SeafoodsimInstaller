@@ -1,4 +1,4 @@
-"c:\program files (x86)\wix toolset v3.10\bin\heat.exe" dir "c:\temp\windowsnoeditor" -directoryid -dr INSTALLFOLDER -srd -sreg -cg SeafoodSimComponents -sfrag -suid -wixvar -gg -out c:\tokni\installer\seafoodsiminstaller\seafoodsiminstaller\seafood.wxs
+rem "c:\program files (x86)\wix toolset v3.10\bin\heat.exe" dir "c:\temp\windowsnoeditor" -directoryid -dr INSTALLFOLDER -srd -sreg -cg SeafoodSimComponents -sfrag -suid -wixvar -gg -out c:\tokni\installer\seafoodsiminstaller\seafoodsiminstaller\seafood.wxs
 
 @echo off 
     setlocal enableextensions disabledelayedexpansion
